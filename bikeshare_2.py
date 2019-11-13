@@ -84,7 +84,11 @@ def load_data(city, month, day):
 
 
 def display_raw_data(df):
-    """Display the five first rows if the user wants by answering yes to the main question"""
+    """
+        Display the five first rows if the user wants by answering yes to the main question.
+        If user answers no then skip and display stats.
+        If user answers yes, he would have the choice to see additional 5 rows or skip to stats.
+    """
 
     show = 5
     assertion = input("\nWould you like to see 5 rows from the raw data (answer must be yes or no)?\n").lower()
