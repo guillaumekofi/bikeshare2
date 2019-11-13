@@ -89,7 +89,7 @@ def display_raw_data(df):
         If user answers yes, he would have the choice to see additional 5 rows or skip to stats.
     """
 
-    show = 5
+    rows = 5
     assertion = input("\nWould you like to see 5 rows from the raw data (answer must be yes or no)?\n").lower()
 
     while assertion not in ('yes', 'no'):
@@ -112,8 +112,8 @@ def display_raw_data(df):
             if assertion_2 == 'no':
                 break
             else:
-                show += 5
-                print(df.head(show))
+                rows += 5
+                print(df.head(rows))
                 assertion_2 = input("\nWould you like to see more 5 rows (answer must be yes or no)?\n").lower()
 
     print('-' * 40)
