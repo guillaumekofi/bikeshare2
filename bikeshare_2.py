@@ -73,8 +73,7 @@ def load_data(city, month, day):
 
     # filter by month if applicable
     if month != 'all':
-        month_index = MONTHS.index(month)
-        df = df[df['month'] == month_index]
+        df = df[df['month'] == MONTHS.index(month)]
 
     # filter by day of week if applicable and save the new dataframe
     if day != 'all':
