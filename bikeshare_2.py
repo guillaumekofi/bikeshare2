@@ -1,3 +1,9 @@
+"""
+    A friendly project to share BikeShare data stats from Chicago, New York City
+    and Washington.
+    Enter one city name and get various stats from the city data.
+"""
+
 import time
 import pandas as pd
 
